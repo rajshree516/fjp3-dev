@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+       
+    </head>
+    <body>
+        <div id ="root">
+
+        </div>
+        
+        <script type="text/babel">
+            // // let ele=document.createElement('h1')
+            // // ele.innerHTML="hello"
+            // let root=document.getElementById('root')
+            // // root.appendChild(ele)
+
+            // let ele=React.createElement('h1',{
+            //     children : ['hello' , 'hii']
+            // })
+            // // console.log(ele)
+            // ReactDOM.render(ele,root)
+
+            //JSX
+            // function Element(){
+            //     return(
+            //         <h1>hello</h1>
+            //     ) 
+            // }
+            // ReactDOM.render(<Element/>,document.getElementById('root'))
+
+
+
+            function Child1(){
+                return <h1>hello</h1>;
+            }
+            function Child2(){
+                return <h2>goodbye</h2>;
+            }
+            function Parent(){
+                return (
+                    <>
+                    <Child1/>
+                    <Child2/>
+                    </>
+                )
+            }
+            ReactDOM.render(<Parent/>,document.getElementById("root"));
+        </script>
+    </body>
+</html>
+
