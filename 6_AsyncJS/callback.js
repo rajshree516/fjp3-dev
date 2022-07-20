@@ -1,6 +1,6 @@
-function pfname(fname , cb ){
+function pfname(fname , lname){
     console.log(fname )
-    cb('somani ')
+    // cb('somani ')
 }
 
 
@@ -9,7 +9,7 @@ function plname(lname ){
 }
 
 // plname('somani ')
-pfname('rajshree' ,plname )
+pfname('rajshree' ,'s' )
 
 
 

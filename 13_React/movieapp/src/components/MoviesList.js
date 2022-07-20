@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
 
-import{movies} from "../MovieData";
+import{movies} from "../movieData";
 
 export class MoviesList extends Component {
   render() {
+    let moviesArr=movies.results
+    console.log(moviesArr)
     return (
       <div>
-        <MovieData/>
-
+        {
+          moviesArr.map((movieElem)=>(
+            <h1>{movieElem.title}</h1>
+          ))
+        }
       </div>
     )
   }
+
 }
 
 export default MoviesList
