@@ -7,13 +7,15 @@ export class MoviesList extends Component {
     let moviesArr=movies.results
     console.log(moviesArr)
     return (
-      <div>
-        {
-          moviesArr.map((movieElem)=>(
-            <h1>{movieElem.title}</h1>
-          ))
-        }
-      </div>
+      // <div>
+      //   {
+      //     moviesArr.map((movieElem)=>(
+      //       <h1>{movieElem.title}</h1>
+      //     ))
+      //   }
+      // </div>
+
+      
     )
   }
 
